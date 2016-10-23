@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: whitesmoke;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="search"],
+button {
+    padding: 10px 15px;
+    font-size: 1.25em;
+}
+
+input[type="search"] {
+    font-size: 1.5em;
+    border: 1px solid;
+    background-color: rgba(158, 158, 158, 0.24);
+    flex: 1;
+}
+
+button {
+    text-transform: uppercase;
+    display: none;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 1em;
+}
+.search-container {
+    margin: 1em 0;
+}
+
+.streams {
+    list-style: none;
+    padding: 1em 0;
+    flex-direction: column;
+}
+
+.stream {
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid black;
+    border-radius: 2px;
+    padding: 1em;
+    background-color: white;
+    border: 0;
+    box-shadow: 0 0.5px 1px;
+    transition: all 0.3s;
+}
+
+.stream:hover {
+    box-shadow: 0 3px 13px;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 2em;
+}
+.streams-info {
+    display: flex;
+    margin-top: 1em;
+    justify-content: flex-end;
+    padding: 0 1em;
+}
+.total-viewers {
+    margin-right: auto;
+}
+
+#pageLeft > span::before {
+    content: "<";
+}
+#pageRight > span::before {
+    content: ">";
+}
+
+#streamsForm {
+    display: flex;
+}
+
+@media only screen and (min-width: 690px) {
+    .main-container {
+        max-width: 60%;
+    }
+    .streams-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .stream {
+  display: flex;
+}
+.stream-image-container {
+    flex: 1 1 30%;
+    margin-right: 1em;
+}
+
+.stream-info-container {
+    flex: 1 1 70%;
+    padding: 1em 0;
+}
+
+    .stream-info-container {
+        padding: 0;
+    }
+    
+    input[type="search"],
+    button {
+        border: 0;
+    }
+    button {
+        display: inline-block;
+    }
+}
