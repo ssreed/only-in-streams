@@ -135,8 +135,8 @@
 				//stream data v2
 				stream_details = "<div class='stream-image-container'>" + "<a href='" + x.stream_url + "'>" +
 					"<img src='" + x.stream_preview + "'srcset='" + x.stream_preview_large + " 640w, " + x.stream_preview_medium + " 320w, " + x.stream_preview_small + " 80w'" + ">" +
-					"</a>" + "</div>" + "<div class='stream-info-container'>" +
-					"<div class='name'>" + x.channel_name + "</div>" +
+					"</a>" + "</div>" + "<div class='stream-info-container'>" + "<a href='" + x.stream_url + "'>" +
+					"<div class='name'>" + x.channel_name + "</div>" + "</a>" +
 					"<div class='game'>" + x.name +
 					" - " + x.number_of_viewers + " viewers</div>" +
 					"<div class='description'>" + x.description + "</div>" + "</div>";
