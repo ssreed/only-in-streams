@@ -12,7 +12,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    background: whitesmoke;
+    background-image: url(crossword.png);
 }
 
 img {
@@ -46,7 +46,7 @@ button {
     padding: 1em;
 }
 .search-container {
-    margin: 1em 0;
+    margin: 1.25em 0;
 }
 
 .streams {
@@ -78,7 +78,6 @@ button {
     display: flex;
     margin-top: 1em;
     justify-content: flex-end;
-    padding: 0 1em;
 }
 .total-viewers {
     margin-right: auto;
